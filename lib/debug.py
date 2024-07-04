@@ -1,8 +1,16 @@
-#!/usr/bin/env python3
-# lib/debug.py
 
-from models.__init__ import CONN, CURSOR
-import ipdb
+from models import Book
+
+def debug_book():
+    book = Book("1984", "George Orwell", 1949)
+    print(book)
+    book.borrow()
+    print(book)
+    book.return_book()
+    print(book)
+
+if __name__ == "__main__":
+    debug_book()
 
 
-ipdb.set_trace()
+

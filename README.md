@@ -21,6 +21,10 @@ This Command-Line Interface (CLI) application simulates a library system, allowi
 ## Prerequisites
 
 - Python 3.x
+<<<<<<< Updated upstream
+=======
+- SQLite
+>>>>>>> Stashed changes
 
 ## Project Structure
 
@@ -36,24 +40,38 @@ This Command-Line Interface (CLI) application simulates a library system, allowi
 │ └── borrower.py
 ├── cli.py
 ├── database.py
+<<<<<<< Updated upstream
 ├── debug.py
 ├── helpers.py
+=======
+├── db_setup.py
+├── debug.py
+├── helpers.py
+├── models.py
+>>>>>>> Stashed changes
 └── seed.py
 
 
 ## Installation
 
 1. **Clone the repository**:
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     ```sh
     git clone <repository-url>
     cd <repository-directory>
     ```
 
 2. **Install dependencies**:
+<<<<<<< Updated upstream
 
     If you are using Pipenv:
 
+=======
+    If you are using Pipenv:
+>>>>>>> Stashed changes
     ```sh
     pipenv install
     pipenv shell
@@ -70,19 +88,28 @@ This Command-Line Interface (CLI) application simulates a library system, allowi
 ## Usage
 
 1. **Seed the library** with initial data:
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     ```sh
     python lib/seed.py
     ```
 
 2. **Run the application**:
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     ```sh
     python lib/cli.py
     ```
 
 3. **Follow the on-screen menu** to perform library operations:
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     ```
     Library Menu:
     1. Add a book
@@ -96,7 +123,10 @@ This Command-Line Interface (CLI) application simulates a library system, allowi
     ```
 
 ## Example
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 ```sh
 Library Menu:
 1. Add a book
@@ -116,9 +146,23 @@ ID: 2 - To Kill a Mockingbird by Harper Lee (1960) - Available
 Enter your choice (1-7): 3
 Enter the ID of the book to borrow: 1
 1984 has been borrowed.
+<<<<<<< Updated upstream
 
 
 Contributing
+=======
+```
+
+## Testing
+Run the debug script to test the functionality:
+
+```sh
+Copy code
+python lib/debug.py
+```
+
+## Contributing
+>>>>>>> Stashed changes
 Fork the repository.
 Create your feature branch (git checkout -b feature/AmazingFeature).
 Commit your changes (git commit -m 'Add some AmazingFeature').

@@ -1,4 +1,3 @@
-
 def get_user_choice():
     print("\nWelcome to the DANIEL Library: Please select an Option:")
     print("1. Add a book")

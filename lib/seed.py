@@ -1,15 +1,16 @@
+from models import Library
 
 def seed_library(library):
     books = [
-        {"title": "The Lean Startup", "author": "Eric Ries", "year": "2011"}, 
+        {"title": "The Lean Startup", "author": "Eric Ries", "year": "2011"},
         {"title": "The 4-Hour Work Week", "author": "Timothy Ferriss", "year": "2007"},
         {"title": "How to Win Friends and Influence People", "author": "Dale Carnegie", "year": "1936"},
         {"title": "The Hard Thing About Hard Things", "author": "Ben Horowitz", "year": "2014"},
         {"title": "Zero to One", "author": "Peter Thiel", "year": "2014"},
         {"title": "The Power of Now", "author": "Eckhart Tolle", "year": "1997"},
-        {"title": "Rich Dad Poor Dad", "author": "Robert Kiyosaki", "year": "1997"}, 
-        {"title": "The 7 Habits of Highly Effective People", "author": "Stephen Covey", "year": "1989"}, 
-        {"title": "Essentialism: The Disciplined Pursuit of Less", "author": "Greg McKeown", "year": "2014"}, 
+        {"title": "Rich Dad Poor Dad", "author": "Robert Kiyosaki", "year": "1997"},
+        {"title": "The 7 Habits of Highly Effective People", "author": "Stephen Covey", "year": "1989"},
+        {"title": "Essentialism: The Disciplined Pursuit of Less", "author": "Greg McKeown", "year": "2014"},
         {"title": "Influence: The Psychology of Persuasion", "author": "Robert Cialdini", "year": "1984"},
         {"title": "1984", "author": "George Orwell", "year": "1949"},
         {"title": "To Kill a Mockingbird", "author": "Harper Lee", "year": "1960"},
@@ -25,3 +26,7 @@ def seed_library(library):
 
     for book_data in books:
         library.add_book(book_data['title'], book_data['author'], book_data['year'])
+
+if __name__ == "__main__":
+    library = Library()
+    seed_library(library)
